@@ -202,6 +202,6 @@
 
 <img src="./materials/images/18.png" style="border-radius: 5px;">
 
-## Карта сайта
+## [Карта сайта](https://app.flowmapp.com/projects/64089e24-5c5d-4148-ae6f-f029f7f21fff/sitemap/ebc2eacd-730b-4016-add5-6a5eccc3666a)
 
 <img src="./materials/images/17.png" style="border-radius: 5px;">
