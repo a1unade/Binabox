@@ -136,7 +136,7 @@
 
 ## [Модель БД](https://drawsql.app/teams/1-652/diagrams/binabox)
 
-<img src="./materials/images/16.png" style="border-radius: 5px;">
+<img src="./materials/images/18.png" style="border-radius: 5px;">
 
 ## Карта сайта
 
