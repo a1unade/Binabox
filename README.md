@@ -1,4 +1,4 @@
-#### [Binabox | NFT Portfolio](https://preview.themeforest.net/item/binabox-nft-portfolio-html-template/full_screen_preview/39941121?_ga=2.96111388.1207829749.1711130062-1867495361.1709358782 "Preview" )
+## [Binabox | NFT Portfolio](https://preview.themeforest.net/item/binabox-nft-portfolio-html-template/full_screen_preview/39941121?_ga=2.96111388.1207829749.1711130062-1867495361.1709358782 "Preview" )
 
 ## Структура веб-сайта: 
 
@@ -6,29 +6,61 @@
 
 - Home 1 <img src="./materials/images/3.png" style="border-radius: 5px;"> <img src="./materials/images/6.png" style="border-radius: 5px;"> <img src="./materials/images/8.png" style="border-radius: 5px;"> <img src="./materials/images/7.png" style="border-radius: 5px;"> 
 
+---
+
 - About 1 <img src="./materials/images/4.png" style="border-radius: 5px;"> <img src="./materials/images/5.png" style="border-radius: 5px;"> 
+
+---
 
 - Road Map 2 <img src="./materials/images/9.png" style="border-radius: 5px;"> 
 
+---
+
 - Sign in <img src="./materials/images/10.png" style="border-radius: 5px;">
+
+---
 
 - Sign up <img src="./materials/images/11.png" style="border-radius: 5px;">
 
+---
+
 - FAQ 2 <img src="./materials/images/12.png" style="border-radius: 5px;">
+
+---
 
 - Collection <img src="./materials/images/13.png" style="border-radius: 5px;">
 
+---
+
 - Item Detail <img src="./materials/images/14.png" style="border-radius: 5px;">
+
+---
 
 - 404 Not Found <img src="./materials/images/15.png" style="border-radius: 5px;">
 
+---
+
 - Административная панель (сначала попробую реализовать сам, в крайнем случае возьму готовую)
+
+---
 
 - Покупка подписок
 
-- Contact (локация, почта)
+---
 
-- Отзывы (страница с отзывами, пользователи смогут оставлять свои отзывы)
+- Contact (локация, почта)  <img src="./materials/images/19.png" style="border-radius: 5px;">
+
+---
+
+- Отзывы (страница с отзывами, пользователи смогут оставлять свои отзывы)  <img src="./materials/images/20.png" style="border-radius: 5px;">
+
+---
+
+- Blog (страница с новостями, контент добавляет админ, пользователи могут оставлять комментарии)  <img src="./materials/images/21.png" style="border-radius: 5px;">
+
+---
+
+- Blog Details  <img src="./materials/images/22.png" style="border-radius: 5px;">
 
 ### На всех страницах:
 
@@ -77,6 +109,38 @@
 - На странице будут представлены варианты подписок (условно 3)
 
 - Вся суть подписки заключается в возможности продавать предметы на сайте (обычный пользователь сможет только покупать, для продажинеобходимо оформить подписку)
+
+### Административная панель
+
+- На странице будет: 
+
+    - Дашборд
+
+    - Управление сайтом
+
+    - Управление пользователями
+
+    - Управление магазином
+
+    - Управление отзывами
+
+    - Вкладка с фидбеком от пользователей (при условии, что пользователь нажал кнопку связаться с нами и отправил свое сообщение)
+
+### Отзывы
+
+- Страница с отзывами пользователей и оценкой (от 1 до 5 звезд)
+
+- Авторизованные пользователи смогут оставлть свои отзывы, редактированием которых будет заниматься админ
+
+### Blog 
+
+- Страница с новостным контентом, при нажатии на статью будет открываться новая страница с полной информацией о статье
+
+- Созданием новостей будет заниматься админ
+
+- Пользователи смогут лишь читать сами статьи и отсавлять свои комментарии
+
+- Редактированием комментарием пользователей также будет заниматься админ
 
 ## Варианты подписки (роли)
 
