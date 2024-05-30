@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{80F2E41F-C034-4373-9010-BB9BF21DF5F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6ACA92EF-6EED-457E-AD62-B38486BBCBD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{845F5836-B856-47F2-A234-7730F2D229B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binabox.Domain", "Binabox.Domain\Binabox.Domain.csproj", "{7C3BE3A8-597F-4F9D-B87E-79A1CCE2C9DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binabox.Application", "Binabox.Application\Binabox.Application.csproj", "{069AE8BD-B1A9-42B1-987C-850AB72D931E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binabox.Infrastructure", "Binabox.Infrastructure\Binabox.Infrastructure.csproj", "{C1F755FC-6D54-420C-A400-C9E3689AEE74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binabox.Persistence", "Binabox.Persistence\Binabox.Persistence.csproj", "{744CC112-BD3D-47AD-83E3-126D48DBAE56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binabox.WebAPI", "Binabox.WebAPI\Binabox.WebAPI.csproj", "{379DA9D8-6FC2-43E5-8F4E-62CD036B1AEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{226D5D1C-BA5D-4D19-9A3F-4764F38873B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C3BE3A8-597F-4F9D-B87E-79A1CCE2C9DB} = {80F2E41F-C034-4373-9010-BB9BF21DF5F6}
+		{069AE8BD-B1A9-42B1-987C-850AB72D931E} = {80F2E41F-C034-4373-9010-BB9BF21DF5F6}
+		{C1F755FC-6D54-420C-A400-C9E3689AEE74} = {6ACA92EF-6EED-457E-AD62-B38486BBCBD5}
+		{744CC112-BD3D-47AD-83E3-126D48DBAE56} = {6ACA92EF-6EED-457E-AD62-B38486BBCBD5}
+		{379DA9D8-6FC2-43E5-8F4E-62CD036B1AEF} = {845F5836-B856-47F2-A234-7730F2D229B7}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C3BE3A8-597F-4F9D-B87E-79A1CCE2C9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3BE3A8-597F-4F9D-B87E-79A1CCE2C9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3BE3A8-597F-4F9D-B87E-79A1CCE2C9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3BE3A8-597F-4F9D-B87E-79A1CCE2C9DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069AE8BD-B1A9-42B1-987C-850AB72D931E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069AE8BD-B1A9-42B1-987C-850AB72D931E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069AE8BD-B1A9-42B1-987C-850AB72D931E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069AE8BD-B1A9-42B1-987C-850AB72D931E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F755FC-6D54-420C-A400-C9E3689AEE74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F755FC-6D54-420C-A400-C9E3689AEE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F755FC-6D54-420C-A400-C9E3689AEE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F755FC-6D54-420C-A400-C9E3689AEE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{744CC112-BD3D-47AD-83E3-126D48DBAE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744CC112-BD3D-47AD-83E3-126D48DBAE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744CC112-BD3D-47AD-83E3-126D48DBAE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744CC112-BD3D-47AD-83E3-126D48DBAE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379DA9D8-6FC2-43E5-8F4E-62CD036B1AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379DA9D8-6FC2-43E5-8F4E-62CD036B1AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379DA9D8-6FC2-43E5-8F4E-62CD036B1AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379DA9D8-6FC2-43E5-8F4E-62CD036B1AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,10 +1,11 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './assets/styles.css'
+import {Provider} from 'react-redux';
+import './assets/styles/styles.css'
 import Routing from "./components/routing";
+import store from "./store";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <Routing/>
-  </React.StrictMode>
+    <Provider store={store}>
+        <Routing/>
+    </Provider>
 )

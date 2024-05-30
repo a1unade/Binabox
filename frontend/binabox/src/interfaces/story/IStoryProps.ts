@@ -1,15 +1,16 @@
 import IStoryData from "./IStoryData.ts";
 import IDataCounter from "./IDataCounter.ts";
-import IAboutData from "./IAboutData.ts";
 
 // Данные для страницы about
 interface IStoryProps {
+    // Заголовок
+    title: string;
+    // Описание
+    description: string;
     // Преимущества сайта
-    data: IStoryData[];
+    aboutStats: IStoryData[];
     // Статистика сайта
-    dataCounter: IDataCounter[]
-    // Информация о сайте
-    dataAbout: IAboutData;
+    aboutCounters: IDataCounter[]
 }
 
 export default IStoryProps;

@@ -1,8 +1,22 @@
-import IStoryProps from "../../interfaces/story/IStoryProps.ts";
 import StoryFirstIcon from "../tsx-icons/story/StoryFirstIcon.tsx";
 import StorySecondIcon from "../tsx-icons/story/StorySecondIcon.tsx";
-function Story(props: IStoryProps) {
-    const { data, dataCounter, dataAbout } = props;
+import {useSiteTypedSelector} from "../../hooks/useTypedSelector.ts";
+import {useEffect, useState} from "react";
+import IStoryProps from "../../interfaces/story/IStoryProps.ts";
+import apiClient from "../../utils/axiosClient.ts";
+function Story() {
+    const [data, setData] = useState<IStoryProps>();
+    const {language} = useSiteTypedSelector(state => state.site);
+
+    useEffect(() => {
+        apiClient.get(`Site/about?lang=${language}`)
+            .then(res => {
+                if (res.data.responseType === 0) setData(res.data);
+                else console.log("Error getting data.");
+            })
+    }, [language])
+
+    if(!data) return null;
 
     return (
         <section className="tf-section tf-about">
@@ -12,13 +26,13 @@ function Story(props: IStoryProps) {
                         <StoryFirstIcon/>
                         <StorySecondIcon/>
                         <div className="tf-heading wow fadeInUp">
-                            <h2 className="heading">{dataAbout.title}</h2>
-                            <p className="sub-heading">{dataAbout.description}</p>
+                            <h2 className="heading">{data.title}</h2>
+                            <p className="sub-heading">{data.description}</p>
                         </div>
 
                         <div className="counter-wrap wow fadeInUp" data-wow-delay="0.2s">
                             {
-                                dataCounter.map(idx => (
+                                data.aboutCounters.map(idx => (
                                     <div key={idx.id} className="tf-counter ">
                                         <h6>{idx.title}</h6>
                                         <div className="content">
@@ -31,7 +45,7 @@ function Story(props: IStoryProps) {
                     </div>
                     <div className='work-list'>
                         {
-                            data.map(idx => (
+                            data.aboutStats.map(idx => (
                                 <div key={idx.id} className="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div className="tf-step wow fadeInUp" data-wow-delay="0.2s">
                                         <div className="step-title">

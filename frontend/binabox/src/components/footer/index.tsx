@@ -1,9 +1,11 @@
 import {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../../assets/images/logo/logo-footer.png';
+import {useSiteTypedSelector} from "../../hooks/useTypedSelector.ts";
 
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const {language} = useSiteTypedSelector(state => state.site);
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -32,18 +34,18 @@ const Footer = () => {
                 <div className="tf-container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h2 className="title">JOIN OUR COMMUNITY</h2>
+                            {language == 'EN' ?
+                                <h2 className="title">JOIN OUR COMMUNITY</h2>
+                                :
+                                <h2 className="title">ПРИСОЕДИНЯЙТЕСЬ К НАШЕМУ СООБЩЕСТВУ</h2>
+                            }
                             <p className="content"></p>
                             <div className="group-btn">
                                 <a href="https://discord.gg/nMYj6zFAwN" className="tf-button discord"
                                    data-toggle="modal" data-target="#popup_bid"><i
                                     className="icon-fl-vt"></i><span>DISCORD</span></a>
-                                <Link to="/collection" className="tf-button">WHITELIST NOW</Link>
+                                <Link to="/shop" className="tf-button">{language === 'EN' ? 'WHITELIST NOW' : 'МАГАЗИН'}</Link>
                             </div>
-                            <form className='email-sennder' action="#" id="subscribe-form">
-                                <input type="email" placeholder="Enter your email" id="subscribe-email"/>
-                                <button className="tf-button" type="submit" id="subscribe-button">SUBSCRIBE</button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -55,21 +57,21 @@ const Footer = () => {
                             <div className="bottom">
                                 <div className="content-left">
                                     <img src={logo} alt="Binabox"/>
-                                    <p className="copy-right">BINABOX 2022 - ALL rights reserved</p>
+                                    <p className="copy-right">{language === 'EN' ? 'BINABOX 2024 - ALL rights reserved' : 'BINABOX 2024 - Все права защищены'}</p>
                                 </div>
                                 <ul className="menu-bottom">
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="/about-v1">About</Link></li>
-                                    <li><Link to="/roadmap-v1">Roadmap</Link></li>
-                                    <li><Link to="/our-team">Our Team</Link></li>
-                                    <li><Link to="/faq-v1">FAQs</Link></li>
+                                    <li><Link to="/">{language === 'EN' ? 'Home' : 'Главная'}</Link></li>
+                                    <li><Link to="/about">{language === 'EN' ? 'About' : 'О нас'}</Link></li>
+                                    <li><Link to="/about/road-map">{language === 'EN' ? 'Roadmap' : 'Дорожная карта'}</Link></li>
+                                    <li><Link to="/about/reviews">{language === 'EN' ? 'Reviews' : 'Отзывы'}</Link></li>
+                                    <li><Link to="/about/faq">{language === 'EN' ? 'FAQs' : 'Вопросы'}</Link></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {isVisible && <Link onClick={scrollToTop} to='#' id="scroll-top"></Link>}
+            {isVisible && <div onClick={scrollToTop} id="scroll-top"></div>}
         </footer>
     );
 }

@@ -28,7 +28,6 @@ const DarkMode = () => {
         }
     };
 
-    // Установите тему при загрузке компонента
     useEffect(() => {
         const body = document.body;
         const switcher = document.getElementById('theme-switcher');

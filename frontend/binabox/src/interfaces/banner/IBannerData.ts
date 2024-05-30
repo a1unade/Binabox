@@ -5,7 +5,7 @@ interface IBannerData {
     // Заголовок
     title: string;
     // Описание
-    desc: string;
+    description: string;
 }
 
 export default IBannerData;

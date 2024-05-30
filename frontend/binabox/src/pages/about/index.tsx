@@ -1,16 +1,17 @@
-import PageTitle from "../../components/pagetitle";
+import PageTitle from "../../components/page-title";
 import Story from "../../components/story";
-import {dataStory} from "../../fakeData/dataStory.ts";
 import Team from "../../components/team";
-import dataTeam from "../../fakeData/dataTeam.ts";
+import {useSiteTypedSelector} from "../../hooks/useTypedSelector.ts";
 
 
 const About = () => {
+    const {language} = useSiteTypedSelector(state => state.site);
+
     return (
         <div className='page-about home-1'>
-            <PageTitle title='About Us' />
-            <Story data={dataStory.data} dataCounter={dataStory.dataCounter} dataAbout={dataStory.dataAbout}/>
-            <Team data={dataTeam.data}/>
+            <PageTitle title={language === 'EN' ? 'ABOUT US' : 'О НАС'} />
+            <Story/>
+            <Team/>
         </div>
     );
 };

@@ -1,12 +1,14 @@
-import PageTitle from "../../../components/pagetitle";
+import PageTitle from "../../../components/page-title";
 import FaqsBlock from "../../../components/faq";
-import dataFaqs from "../../../fakeData/dataFaq.ts";
+import {useSiteTypedSelector} from "../../../hooks/useTypedSelector.ts";
 
 const Faq = () => {
+    const {language} = useSiteTypedSelector(state => state.site);
+
     return (
         <div className='page-faq'>
-            <PageTitle title='HOW CAN WE HELP?'/>
-            <FaqsBlock data={dataFaqs.data}/>
+            <PageTitle title={language === 'EN' ? 'HOW CAN WE HELP?' : 'КАК МЫ МОЖЕМ ПОМОЧЬ?'}/>
+            <FaqsBlock/>
         </div>
     );
 }

@@ -1,0 +1,20 @@
+.admin-shop-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 100px;
+}
+
+.admin-shop-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.admin-shop-item-header {
+    font-size: 16px;
+}

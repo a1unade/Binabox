@@ -1,7 +1,7 @@
 
 interface IWorkData {
     id: number;
-    img: string;
+    image: string;
     title: string;
     text: string;
 }

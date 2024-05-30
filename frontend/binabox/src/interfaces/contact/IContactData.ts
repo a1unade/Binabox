@@ -6,7 +6,7 @@ interface IContactData {
     // Заголовок
     title: string;
     // Картинка
-    img: string;
+    image: string;
     // Информация
     info: string;
 }

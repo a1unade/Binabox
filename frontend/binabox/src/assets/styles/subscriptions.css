@@ -1,0 +1,67 @@
+.subscription-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscriptions-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.subscription-item .tf-step{
+    width: 400px;
+    height: 700px;
+}
+
+.subscription-properties{
+    font-size: 18px;
+    margin-top: 150px;
+    text-align: left;
+}
+
+.subscriptions-list .subscription-properties :not(ol):not(ul) {
+    list-style: circle !important;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.subscription-price{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 680px;
+    left: 130px;
+}
+
+select {
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 14px 24px;
+    width: 90%;
+    background-color: var(--primary-color17);
+    color: var(--primary-color2);
+}
+
+.subscription-duration{
+    text-align: left;
+    font-size: 16px;
+}
+
+.subscription-settings{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}

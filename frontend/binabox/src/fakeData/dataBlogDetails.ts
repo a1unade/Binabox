@@ -1,4 +1,4 @@
-import IBlogDetailsData from "../interfaces/blogdetails/IBlogDetailsData.ts";
+import IBlogDetailsData from "../interfaces/blog-details/IBlogDetailsData.ts";
 import img1 from '../assets/images/blog/blog-details-1.jpg'
 import img2 from '../assets/images/blog/blog-details-2.jpg'
 import img3 from '../assets/images/blog/blog-details-3.jpg'

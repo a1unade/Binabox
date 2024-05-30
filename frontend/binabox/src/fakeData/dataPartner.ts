@@ -17,7 +17,6 @@ import logo17 from '../assets/images/partner/partner-17.png'
 import logo18 from '../assets/images/partner/partner-18.png'
 import IPartnerData from "../interfaces/partner/IPartnerData.ts";
 
-
 const dataPartner : IPartnerData[] = [
     {
         id: 1,
@@ -92,10 +91,7 @@ const dataPartner : IPartnerData[] = [
     {
         id: 18,
         img: logo18
-    },
-
-
-
+    }
 ]
 
 export default dataPartner;

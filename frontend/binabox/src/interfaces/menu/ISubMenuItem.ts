@@ -4,6 +4,8 @@ export interface ISubMenuItem {
     id: number;
     // Название элемента
     name: string;
+    // Название элемента на русском
+    rusName: string;
     // Ссылка на элемент (для роутинга)
     links: string
 }

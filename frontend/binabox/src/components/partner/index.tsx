@@ -1,9 +1,12 @@
 import IPartnerProps from "../../interfaces/partner/IPartnerProps.ts";
 import PartnerBackgroundIcon from "../tsx-icons/partner/PartnerBackgroundIcon.tsx";
-import PartnerSlider from "./partnerswiper";
+import PartnerSlider from "./partner-swiper";
+import {useSiteTypedSelector} from "../../hooks/useTypedSelector.ts";
 
 const Partner = (props: IPartnerProps) => {
     const {data} = props;
+    const {language} = useSiteTypedSelector(state => state.site);
+
     return (
         <section className=" tf-section tf-partner-sec">
             <div className="icon">
@@ -13,7 +16,10 @@ const Partner = (props: IPartnerProps) => {
                 <div className="row">
                     <div className="col-md-12 ">
                         <div className="tf-heading mb60 wow fadeInUp">
-                            <h2 className="heading"><span>BINABOX</span> PARTNER</h2>
+                            {language == 'EN' ?
+                                <h2 className="heading"><span>BINABOX</span> PARTNER</h2>
+                                :
+                                <h2 className="heading">ПАРТНЕРЫ <span>BINABOX </span></h2>}
                         </div>
                     </div>
                     <div className="col-md-12 wow fadeInUp">

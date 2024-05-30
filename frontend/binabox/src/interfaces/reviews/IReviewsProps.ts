@@ -1,10 +1,10 @@
 import IReviewsData from "./IReviewsData.ts";
-import IReviewsTitle from "./IReviewsTitle.ts";
 
 // Отзывы на странице reviews
 interface IReviewsProps {
-    data: IReviewsData[];
-    titleData: IReviewsTitle;
+    reviews: IReviewsData[];
+    title: string;
+    description: string;
 }
 
 export default IReviewsProps;

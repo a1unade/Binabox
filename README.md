@@ -1,4 +1,26 @@
-## [Binabox | NFT Portfolio](https://preview.themeforest.net/item/binabox-nft-portfolio-html-template/full_screen_preview/39941121?_ga=2.96111388.1207829749.1711130062-1867495361.1709358782 "Preview" )
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/7Hseisae)
+# Семестровая работа 2024 Весна (4 семестр)
+\
+developer: Станчу Данил Владимирович \
+name_project: Binabox \
+template_ui_link: [Binabox | NFT Portfolio](https://preview.themeforest.net/item/binabox-nft-portfolio-html-template/full_screen_preview/39941121?_ga=2.96111388.1207829749.1711130062-1867495361.1709358782 "Preview" ) \
+link_production: ссылка на развернутое приложение \
+
+#### Структура Readme
+
+- Языки и технологии на которых писался проект \
+- Зависимости от сторонних библиотек ваше проекта \
+- Файл или команда для наполнения БД тестовыми данными \
+- Инструкция по разворачиванию вашего проекта (в докере либо на сервере) \
+- Тестовые логины пароли \
+- Ссылка на файл .docx с ТЗ по семестровой работе
+
+#### Цитаты великих людей
+Ваша работа заполнит большую часть жизни и единственный способ быть
+полностью довольным — делать то, что по-вашему является великим делом.
+И единственный способ делать великие дела — любить то, что вы делаете.
+
+*— Стив Джобс, Речь в Стенфорде*
 
 ## Структура веб-сайта: 
 

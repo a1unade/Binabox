@@ -3,7 +3,7 @@ interface IShopData {
     // ID
     id: number;
     // Картинка товара
-    img: string;
+    image: string;
     // Название товара
     title: string;
 }

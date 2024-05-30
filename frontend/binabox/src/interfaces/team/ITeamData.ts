@@ -4,7 +4,7 @@ interface ITeamData {
     // ID
     id: number;
     // Аватарка
-    img: string;
+    image: string;
     // Имя
     name: string;
     // Должность

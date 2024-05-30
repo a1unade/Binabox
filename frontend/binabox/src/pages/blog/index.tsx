@@ -1,11 +1,12 @@
 import {Link} from 'react-router-dom';
-import PageTitle from "../../components/pagetitle";
+import PageTitle from "../../components/page-title";
 import IBlogProps from "../../interfaces/blog/IBlogProps.ts";
 import BlogUserIcon from "../../components/tsx-icons/blog/BlogUserIcon.tsx";
 import BlogDateIcon from "../../components/tsx-icons/blog/BlogDateIcon.tsx";
 
 const Blog = (props: IBlogProps) => {
     const {data} = props;
+
     return (
         <div>
             <PageTitle title='BLOG'/>
