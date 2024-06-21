@@ -14,11 +14,11 @@ public static class ServiceCollectionExtensions
         services.AddSignalR();
         
         services
-            .AddTransient<IMediator, Mediator>()
-            .AddTransient<IAuthService, AuthService>()
-            .AddTransient<IEmailService, EmailService>()
-            .AddTransient<IUserService, UserService>()
-            .AddTransient<IShopService, ShopService>()
-            .AddTransient<IStaticService, StaticService>();
+            .AddScoped<IMediator, Mediator>()
+            .AddScoped<IAuthService, AuthService>()
+            .AddScoped<IEmailService, EmailService>()
+            .AddScoped<IUserService, UserService>()
+            .AddScoped<IShopService, ShopService>()
+            .AddScoped<IStaticService, StaticService>();
     }
 }

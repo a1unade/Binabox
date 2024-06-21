@@ -13,15 +13,9 @@ public static class ServiceCollectionExtensions
 {
     public static void AddPersistenceLayer(this IServiceCollection services, IConfiguration configuration)
     {
-        //services.AddMappings();
         services.AddDbContext(configuration);
         services.AddRepositories();
     }
-
-    //private static void AddMappings(this IServiceCollection services)
-    //{
-    //    services.AddAutoMapper(Assembly.GetExecutingAssembly());
-    //}
 
     private static void AddDbContext(this IServiceCollection services, IConfiguration configuration)
     {
@@ -41,10 +35,8 @@ public static class ServiceCollectionExtensions
             .AddEntityFrameworkStores<ApplicationDbContext>();
         
         services
-            .AddTransient(typeof(IUnitOfWork), typeof(UnitOfWork))
-            .AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>))
-            .AddTransient<IUserRepository, UserRepository>()
-            .AddTransient<IShopRepository, ShopRepository>()
-            .AddTransient<IStaticRepository, StaticRepository>();
+            .AddScoped<IUserRepository, UserRepository>()
+            .AddScoped<IShopRepository, ShopRepository>()
+            .AddScoped<IStaticRepository, StaticRepository>();
     }
 }

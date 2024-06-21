@@ -1,5 +1,4 @@
 using System.Reflection;
-using Binabox.Application.Extensions;
 using Binabox.Infrastructure.Extensions;
 using Binabox.Infrastructure.SignalR;
 using Binabox.Persistence.Extensions;
@@ -9,7 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddInfrastructureLayer();
 builder.Services.AddPersistenceLayer(builder.Configuration);
-builder.Services.AddApplicationLayer();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
@@ -40,11 +38,9 @@ app.UseFileServer(new FileServerOptions
     EnableDefaultFiles = true  
 }); 
 
-
-app.MapControllers();
-app.MapHub<EmailConfirmationHub>("/emailConfirmationHub");
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseHttpsRedirection();
+app.MapHub<EmailConfirmationHub>("/emailConfirmationHub");
+app.MapControllers();
 
 app.Run();
